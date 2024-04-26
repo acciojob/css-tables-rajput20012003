@@ -1,16 +1,68 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Tables</title>
+<style>
+  .table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .row {
+    display: table-row;
+  }
+
+  .cell {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+  .header-cell {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .even {
+    background-color: #f2f2f2;
+  }
+</style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <div class="table">
+    <div class="row">
+      <div class="cell header-cell">Name</div>
+      <div class="cell header-cell">Email</div>
+      <div class="cell header-cell">Phone</div>
+      <div class="cell header-cell">Address</div>
+    </div>
+    <div class="row">
+      <div class="cell">John Doe</div>
+      <div class="cell">john@example.com</div>
+      <div class="cell">123-456-7890</div>
+      <div class="cell">123 Street, City, Country</div>
+    </div>
+    <div class="row even">
+      <div class="cell">Jane Smith</div>
+      <div class="cell">jane@example.com</div>
+      <div class="cell">987-654-3210</div>
+      <div class="cell">456 Avenue, City, Country</div>
+    </div>
+    <div class="row">
+      <div class="cell">Mike Johnson</div>
+      <div class="cell">mike@example.com</div>
+      <div class="cell">456-789-0123</div>
+      <div class="cell">789 Road, City, Country</div>
+    </div>
+    <div class="row even">
+      <div class="cell">Emily Brown</div>
+      <div class="cell">emily@example.com</div>
+      <div class="cell">789-012-3456</div>
+      <div class="cell">012 Lane, City, Country</div>
+    </div>
+  </div>
 </body>
-
 </html>
